@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Курс JavaScript</title>
+    <script>
+      /*Массив
+      var array = [
+        "Petrova",
+        "Liya",
+        "Ilinychna",
+        "Repetitor",
+        "среднее профессиональное",
+        "первая",
+        "Многопрофильный колледж при МГТУ им. Г.И. Носова",
+        "Информатьика",
+        "Фотограф, музыакант",
+      ];*/
+      let obj = {
+        surname: "Petrova",
+        name: "Liya",
+        patronymic: "Ilinychna",
+        ocupation: "Repetitor",
+        degree: "среднее профессиональное",
+        category: "первая",
+        education: "Многопрофильный колледж при МГТУ им. Г.И. Носова",
+        descip: "Информатьика",
+        note: "Фотограф, музыакант",
+      };
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1 align="center">Введение в JavaScript</h1>
+    </header>
+
+    <div class="content">
+      <script>
+        /* Массив
+        document.write(
+          array[0] + "<br>",
+          array[1] + "<br>",
+          array[2] + "<br>",
+          array[3] + "<br>",
+          array[4] + "<br>",
+          array[5] + "<br>",
+          array[6] + "<br>",
+          array[7] + "<br>",
+          array[8]
+        );*/
+
+        for (let prop in obj) {
+          document.write(prop + ": " + obj[prop] + "<br>");
+        }
+      </script>
+    </div>
+
+    <footer align="center"></footer>
+  </body>
+</html>
